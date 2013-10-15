@@ -16,4 +16,4 @@ TODO
 ----
 - more of the intelligence portal functions, downloading multiple files by tag etc.
 
-any issues: villain@evilthings.org
+any issues: villain[at]evilthings.org
