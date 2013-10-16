@@ -4,7 +4,7 @@ vti is a python script which makes use of the various API functions virustotal h
 
 the current list of supported options are:
 - retrieve report for a hash (md5/sha1/sha256)
-- force re-scan of url
+- initiate scan of url
 - retrieve url scan report
 - force rescan of hash
 - retreive ip report
