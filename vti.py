@@ -14,7 +14,7 @@
 #
 __author__ = 'madvillain'
 __version__ = '0.1'
-__email__ = 'villain@evilthings.org'
+__email__ = 'villain[at]evilthings.org'
 
 import json
 import optparse
