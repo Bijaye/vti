@@ -34,7 +34,7 @@ LOCAL_STORE = 'files'
 
 def title():
     print "-----------------------------------------------"
-    print "\tvti", __version__ , "\n"
+    print "\tvti",__version__ , "\n"
     print "\t", __email__
     print "\thttp://www.evilthings.org"
     print "-----------------------------------------------"
@@ -77,7 +77,7 @@ class virustotalAPI():
         url = self.base + "url/scan"
         data = urllib.urlencode(param)
         result = urllib2.urlopen(url, data)
-        print "\n\t[x] VirusTotal rescan initiated for: " + vturl + "\n"
+        print "\n\t[x] VirusTotal scan initiated for: " + vturl + "\n"
 
     def rescan(self, md5):
         param = {'resource': md5, 'apikey': self.api}
@@ -218,7 +218,7 @@ def main():
   arg=argparse.ArgumentParser(description="search and download from virustotal")
   arg.add_argument("<indicator>", help="enter the hash (md5/sha1/sha256), path to a file, or a url/ip/domain")
   arg.add_argument("-s", "--search", action="store_true", help="retrieve report for hash")
-  arg.add_argument("-u", "--scanurl", action="store_true", help="force re-scan of url")
+  arg.add_argument("-u", "--scanurl", action="store_true", help="initiate scan of url")
   arg.add_argument("-g", "--urlreport", action="store_true", help="retrieve url scan report")
   arg.add_argument("-r", "--rescan",action="store_true", help="force rescan of hash")
   arg.add_argument("-i", "--ip", action="store_true", help="retreive ip report")
